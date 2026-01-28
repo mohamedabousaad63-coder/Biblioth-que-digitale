@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Livres</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>📖 Nos Livres</h1>
+</header>
+<nav>
+<a href="index.html">Accueil</a>
+<a href="livres.html">Livres</a>
+<a href="nouveautes.html">Nouveautés</a>
+<a href="reservation.html">Réservation</a>
+<a href="favoris.html">Favoris</a>
+<a href="historique.html">Historique</a>
+<a href="contact.html">Contact</a>
+<a href="apropos.html">À propos</a>
+</nav>
+
+<section id="listeLivres"></section>
+
+<!-- Formulaire emprunt -->
+<div id="empruntForm">
+<div>
+<h3>Informations pour emprunt</h3>
+<input type="text" id="nomEmprunt" placeholder="Nom">
+<input type="text" id="prenomEmprunt" placeholder="Prénom">
+<input type="text" id="groupeEmprunt" placeholder="Groupe">
+<button onclick="confirmerEmprunt()">Confirmer</button>
+<button onclick="fermerEmpruntForm()" style="background:red;">Annuler</button>
+</div>
+</div>
+
+<script src="script.js"></script>
+<script>
+window.addEventListener("DOMContentLoaded", afficherLivres);
+</script>
+</body>
+</html>

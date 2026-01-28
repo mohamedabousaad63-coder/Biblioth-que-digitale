@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Réservation des places</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>🪑 Réserver une place</h1></header>
+<nav>
+<a href="index.html">Accueil</a>
+<a href="livres.html">Livres</a>
+<a href="nouveautes.html">Nouveautés</a>
+<a href="reservation.html">Réservation</a>
+<a href="favoris.html">Favoris</a>
+<a href="historique.html">Historique</a>
+<a href="contact.html">Contact</a>
+<a href="apropos.html">À propos</a>
+</nav>
+
+<section>
+<h2>Réserver votre place</h2>
+Nom:<input type="text" id="nomPlace">
+Prénom:<input type="text" id="prenomPlace">
+Groupe:<input type="text" id="groupePlace">
+Place:
+<select id="place">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select>
+Heure:
+<select id="heure">
+<option>08:30-11:00</option>
+<option>11:00-13:30</option>
+<option>13:30-16:00</option>
+</select>
+<button onclick="reserverPlace()">Réserver</button>
+
+<h3>Places</h3>
+<div id="listePlaces"></div>
+<p>Nombre de réservations: <span id="nombreReservations">0</span></p>
+
+<script src="script.js"></script>
+<script>window.addEventListener("DOMContentLoaded", afficherPlaces);</script>
+</section>
+</body>
+</html>

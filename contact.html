@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Contact</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>✉️ Contactez-nous</h1></header>
+<nav>
+<a href="index.html">Accueil</a>
+<a href="livres.html">Livres</a>
+<a href="nouveautes.html">Nouveautés</a>
+<a href="reservation.html">Réservation</a>
+<a href="favoris.html">Favoris</a>
+<a href="historique.html">Historique</a>
+<a href="contact.html">Contact</a>
+<a href="apropos.html">À propos</a>
+</nav>
+
+<section>
+<form id="contactForm">
+<input type="text" id="nomContact" placeholder="Nom">
+<input type="email" id="emailContact" placeholder="Email">
+<textarea id="messageContact" placeholder="Message"></textarea>
+<button type="button" onclick="envoyerMessage()">Envoyer</button>
+</form>
+<p id="etatContact"></p>
+
+<script src="script.js"></script>
+</section>
+</body>
+</html>
